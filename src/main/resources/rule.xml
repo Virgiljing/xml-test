@@ -1,0 +1,24 @@
+<!DOCTYPE digester-rules PUBLIC
+        "-//Apache Commons //DTD digester-rules XML V1.0//EN"
+        "http://commons.apache.org/digester/dtds/digester-rules-3.0.dtd">
+<digester-rules>
+    <!--school node-->
+    <pattern value="school/classes">
+        <object-create-rule classname="com.virgilin.digester.definition.SchoolDefinition"/>
+        <!--class node-->
+        <pattern value="class">
+            <object-create-rule classname="com.virgilin.digester.definition.ClassDefinition"/>
+            <set-properties-rule/>
+            <!--student node-->
+            <pattern value="student">
+                <object-create-rule classname="com.virgilin.digester.definition.StudentDefinition"/>
+                <bean-property-setter-rule pattern="no"/>
+                <bean-property-setter-rule pattern="name"/>
+                <bean-property-setter-rule pattern="age"/>
+                <set-next-rule methodname="addStudent"/>
+            </pattern>
+            <set-next-rule methodname="addClass"/>
+        </pattern>
+    </pattern>
+
+</digester-rules>

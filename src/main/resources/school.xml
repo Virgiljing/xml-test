@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<school>
+    <classes>
+        <class className="classOne">
+        <student>
+            <no>1</no>
+            <name>小张</name>
+            <age>24</age>
+        </student>
+        <student>
+            <no>2</no>
+            <name>小李</name>
+            <age>24</age>
+        </student>
+        <student>
+            <no>1</no>
+            <name>小王</name>
+            <age>24</age>
+        </student>
+    </class>
+        <class className="classTwo">
+
+            <student>
+                <no>5</no>
+                <name>小李1</name>
+                <age>66</age>
+            </student>
+            <student>
+                <no>6</no>
+                <name>小王1</name>
+                <age>33</age>
+            </student>
+        </class>
+    </classes>
+</school>

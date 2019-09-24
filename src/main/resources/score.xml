@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE scores[
+        <!ELEMENT scores (student+)>
+        <!ELEMENT student (name,course,score)>
+        <!ATTLIST student id CDATA #REQUIRED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT course (#PCDATA)>
+        <!ELEMENT score (#PCDATA)>
+        ]>
+<scores>
+    <student id="1">
+        <name>张三</name>
+        <course>java</course>
+        <score>99</score>
+    </student>
+    <student id="2">
+        <name>李四</name>
+        <course>python</course>
+        <score>99</score>
+    </student>
+    <student id="3">
+        <name>王五</name>
+        <course>MySQL</course>
+        <score>99</score>
+    </student>
+</scores>
